@@ -31,7 +31,7 @@ stage('Run container') {
         script {
     LAST_STARTED = env.STAGE_NAME
 
-              sh ' docker run -itd -p 8095:8082 --name jenkinstest jenkinstest:mule'
+              sh ' docker run -itd -p 8097:8082 --name jenkinstest jenkinstest:mule'
 container_Up = true
 sh 'sleep 90'
         }
